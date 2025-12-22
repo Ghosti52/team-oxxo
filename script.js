@@ -1,10 +1,3 @@
-window.onload = () => {
-  setTimeout(() => {
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("site").style.display = "block";
-  }, 3000);
-};
-
 function toggleYetkililer() {
   const y = document.getElementById("yetkililer");
   const d = document.getElementById("duyurular");
