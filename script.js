@@ -1,15 +1,22 @@
-function toggleYetkili() {
-  const y = document.getElementById("yetkililer");
-  const e = document.getElementById("etkinlikler");
+window.onload = () => {
+  setTimeout(() => {
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("site").style.display = "block";
+  }, 3000);
+};
 
-  e.style.display = "none";
+function toggleYetkililer() {
+  const y = document.getElementById("yetkililer");
+  const d = document.getElementById("duyurular");
+
+  d.style.display = "none";
   y.style.display = y.style.display === "block" ? "none" : "block";
 }
 
-function toggleEtkinlik() {
-  const e = document.getElementById("etkinlikler");
+function toggleDuyurular() {
+  const d = document.getElementById("duyurular");
   const y = document.getElementById("yetkililer");
 
   y.style.display = "none";
-  e.style.display = e.style.display === "block" ? "none" : "block";
+  d.style.display = d.style.display === "block" ? "none" : "block";
 }
