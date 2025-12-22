@@ -5,10 +5,10 @@
 }
 
 body {
-  background: black;
+  background: url("bg.jpg") center / cover no-repeat; /* 👈 BURAYA ARKA PLAN RESMİ */
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -22,7 +22,7 @@ body {
   align-items: center;
   z-index: 9999;
   animation: introFade 3s forwards;
-  pointer-events: none; /* TIKLAMA ENGELLEMEYİ BİTİRİR */
+  pointer-events: none;
 }
 
 .intro-logo {
@@ -34,14 +34,8 @@ body {
 
 /* intro 3 sn sonra TAMAMEN etkisiz */
 @keyframes introFade {
-  0% {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  80% {
-    opacity: 1;
-    pointer-events: auto;
-  }
+  0% { opacity: 1; }
+  80% { opacity: 1; }
   100% {
     opacity: 0;
     visibility: hidden;
@@ -100,7 +94,7 @@ h1 {
 /* PANELLER */
 .panel {
   display: none;
-  background: #111;
+  background: rgba(0,0,0,0.8);
   border: 2px solid white;
   border-radius: 10px;
   padding: 20px;
