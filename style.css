@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 🔥 ALEVLI INTRO */
+#intro {
+  position: fixed;
+  inset: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: introFade 3s forwards;
+}
+
+.intro-logo {
+  width: 220px;
+  filter:
+    drop-shadow(0 0 10px #ff4500)
+    drop-shadow(0 0 25px #ff6a00)
+    drop-shadow(0 0 50px #ff0000);
+  animation: fireFlicker 0.15s infinite alternate;
+}
+
+/* Alev titremesi */
+@keyframes fireFlicker {
+  from {
+    filter:
+      drop-shadow(0 0 10px #ff4500)
+      drop-shadow(0 0 25px #ff6a00)
+      drop-shadow(0 0 40px #ff0000);
+    transform: scale(1);
+  }
+  to {
+    filter:
+      drop-shadow(0 0 15px #ffae00)
+      drop-shadow(0 0 35px #ff4500)
+      drop-shadow(0 0 60px #ff0000);
+    transform: scale(1.03);
+  }
+}
+
+/* Intro kaybolma */
+@keyframes introFade {
+  0% { opacity: 1; }
+  70% { opacity: 1; }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Arka plan logo */
+.bg-logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+/* Üst başlık */
+header {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: 4px;
+}
+
+/* Ön logo */
+.logo-container {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.main-logo {
+  width: 180px;
+}
+
+/* Butonlar */
+.buttons {
+  position: absolute;
+  bottom: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 2;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #222;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Discord butonu */
+.discord {
+  border-color: #5865F2;
+}
+
+.discord:hover {
+  background-color: #5865F2;
+  color: white;
+}
+
+/* Paneller */
+.panel {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 500px;
+  background-color: #111;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  z-index: 3;
+}

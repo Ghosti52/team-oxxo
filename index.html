@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>TEAM OXXO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ALEVLI AÇILIŞ EKRANI -->
+  <div id="intro">
+    <img src="logo.png" class="intro-logo">
+  </div>
+
+  <!-- ANA SITE -->
+  <div id="main-site">
+
+    <!-- Arka plan logo -->
+    <img src="logo.png" class="bg-logo">
+
+    <!-- Üst başlık -->
+    <header>
+      <h1>TEAM OXXO</h1>
+    </header>
+
+    <!-- Ön logo -->
+    <div class="logo-container">
+      <img src="logo.png" class="main-logo">
+    </div>
+
+    <!-- Butonlar -->
+    <div class="buttons">
+      <a href="https://discord.gg/zCQeA7zUSQ" class="btn discord" target="_blank">
+        Discord Sunucusu
+      </a>
+
+      <button class="btn" onclick="toggleYetkili()">Yetkililer</button>
+      <button class="btn" onclick="toggleEtkinlik()">Etkinlikler & Duyurular</button>
+    </div>
+
+    <!-- Yetkililer -->
+    <div id="yetkililer" class="panel">
+      <h2>Yetkililer</h2>
+      <p>👑 Kurucu: MURATCAN OXXO & TRAQZİİ</p>
+      <p>🔧 Moderatör: Sooly</p>
+    </div>
+
+    <!-- Etkinlikler -->
+    <div id="etkinlikler" class="panel">
+      <h2>Etkinlikler & Duyurular</h2>
+      <p>📢 Yeni etkinlik yakında</p>
+      <p>🎮 Haftalık oyun gecesi</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
