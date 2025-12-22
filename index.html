@@ -7,47 +7,37 @@
 </head>
 <body>
 
-  <!-- ALEVLI AÇILIŞ EKRANI -->
+  <!-- ALEVLI GİRİŞ -->
   <div id="intro">
-    <img src="logo.png" class="intro-logo">
+    <img src="logo.png" alt="OXXO Logo" class="intro-logo">
   </div>
 
-  <!-- ANA SITE -->
-  <div id="main-site">
+  <!-- ANA SİTE -->
+  <div id="site">
 
-    <!-- Arka plan logo -->
-    <img src="logo.png" class="bg-logo">
+    <h1>TEAM OXXO</h1>
 
-    <!-- Üst başlık -->
-    <header>
-      <h1>TEAM OXXO</h1>
-    </header>
+    <!-- ORTA LOGO -->
+    <img src="logo.png" class="main-logo">
 
-    <!-- Ön logo -->
-    <div class="logo-container">
-      <img src="logo.png" class="main-logo">
-    </div>
-
-    <!-- Butonlar -->
+    <!-- BUTONLAR -->
     <div class="buttons">
-      <a href="https://discord.gg/zCQeA7zUSQ" class="btn discord" target="_blank">
+      <a href="https://discord.gg/zCQeA7zUSQ" target="_blank" class="btn discord">
         Discord Sunucusu
       </a>
 
-      <button class="btn" onclick="toggleYetkili()">Yetkililer</button>
-      <button class="btn" onclick="toggleEtkinlik()">Etkinlikler & Duyurular</button>
+      <button class="btn" onclick="toggleYetkililer()">Yetkililer</button>
+      <button class="btn" onclick="toggleDuyurular()">Etkinlikler & Duyurular</button>
     </div>
 
-    <!-- Yetkililer -->
+    <!-- YETKİLİLER -->
     <div id="yetkililer" class="panel">
-      <h2>Yetkililer</h2>
-      <p>👑 Kurucu: MURATCAN OXXO & TRAQZİİ</p>
-      <p>🔧 Moderatör: Sooly</p>
+      <p>👑 Kurucu: <b>MURATCAN OXXO</b> & <b>TRAQZİİ</b></p>
+      <p>🛡 Moderatör: <b>Sooly</b></p>
     </div>
 
-    <!-- Etkinlikler -->
-    <div id="etkinlikler" class="panel">
-      <h2>Etkinlikler & Duyurular</h2>
+    <!-- DUYURULAR -->
+    <div id="duyurular" class="panel">
       <p>📢 Yeni etkinlik yakında</p>
       <p>🎮 Haftalık oyun gecesi</p>
     </div>
